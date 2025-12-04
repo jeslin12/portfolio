@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Justin Jeslin — Java Full-Stack Developer</title>
+  <meta name="description" content="Portfolio of Justin Jeslin — Java Full-Stack Developer | Projects: ML, Web, Data Analysis" />
+  <style>
+    :root{
+      --bg:#f6f8fb; --card:#ffffff; --muted:#6b7280; --accent:#0f62fe;
+      --maxw:1100px; --radius:12px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0b1220;line-height:1.5}
+    .container{max-width:var(--maxw);margin:32px auto;padding:24px}
+    header{display:flex;gap:20px;align-items:center}
+    .avatar{width:110px;height:110px;border-radius:14px;background:linear-gradient(135deg,#e6eefc,#f8fbff);display:flex;align-items:center;justify-content:center;font-weight:700;color:var(--accent);font-size:18px}
+    h1{margin:0;font-size:28px}
+    p.lead{color:var(--muted);margin:6px 0 0}
+    nav{margin-left:auto}
+    nav a{margin-left:12px;text-decoration:none;color:var(--muted);font-weight:600}
+    .hero{display:flex;gap:32px;align-items:center;margin-top:22px}
+    .hero .summary{flex:1}
+    .cta{margin-top:16px}
+    .btn{display:inline-block;padding:10px 14px;border-radius:10px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+
+    /* cards */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:20px}
+    .card{background:var(--card);padding:16px;border-radius:12px;box-shadow:0 6px 18px rgba(12,20,40,0.06)}
+    .tag{display:inline-block;padding:6px 8px;border-radius:999px;background:#eef2ff;color:#1b3dbb;font-weight:600;font-size:12px}
+
+    /* sections */
+    section{margin-top:28px}
+    h2{margin:0 0 10px;font-size:20px}
+    .skills{display:flex;flex-wrap:wrap;gap:10px}
+    .skill{background:#fff;padding:8px 10px;border-radius:10px;border:1px solid #eef2f6}
+
+    /* projects */
+    .project-meta{font-size:13px;color:var(--muted);margin-top:8px}
+    .project-actions{margin-top:12px;display:flex;gap:8px}
+
+    /* contact */
+    form{display:grid;gap:10px}
+    input,textarea{padding:10px;border-radius:8px;border:1px solid #dfe6f0}
+    textarea{min-height:120px}
+
+    footer{margin-top:36px;text-align:center;color:var(--muted);font-size:13px}
+
+    @media (max-width:720px){header{flex-direction:column;align-items:flex-start}.hero{flex-direction:column}nav{margin-left:0}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar"><img src="photo_-_Edited-removebg-preview.png" alt="Profile Photo" style="width:100%; height:100%; object-fit:cover; border-radius:14px;"></div>
+      <div>
+        <h1>Justin Jeslin</h1>
+        <p class="lead">Java Full-Stack Developer — building web & data-driven applications</p>
+        <div style="margin-top:8px;color:var(--muted);font-size:14px">Phone: <strong>8116265454</strong> • Email: <a href="mailto:jebastinjeslin2@gmail.com">jebastinjeslin2@gmail.com</a></div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="summary card">
+        <h2>About Me</h2>
+        <p>I am a passionate Java full-stack developer with experience in HTML, CSS, JavaScript, and backend programming. I enjoy solving problems, learning new tools, and building projects that make an impact.</p>
+        <div style="margin-top:12px">
+          <div class="tag">B.Tech — Gayatri Vidya Parishad (2021–2025)</div>
+          <div class="tag" style="margin-left:8px">React • Java • Python</div>
+        </div>
+      </div>
+
+      <div style="min-width:260px">
+        <div class="card">
+          <h2>Quick Facts</h2>
+          <div style="margin-top:8px;font-size:14px;color:var(--muted)">
+            <div><strong>Skills:</strong> Java, HTML, CSS, JavaScript, TypeScript, Bootstrap, React, Data Analytics (Python)</div>
+            <div style="margin-top:6px"><strong>Services:</strong> Java Full-Stack Development</div>
+            <div style="margin-top:6px"><strong>Location:</strong> 123 Anywhere St., Any City</div>
+            <div style="margin-top:10px"><a class="btn" href="#projects">View Portfolio</a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services">
+      <h2>Services</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Java Full-Stack Development</h3>
+          <p class="project-meta">Building responsive frontends and robust Java backends. REST APIs, database integration, and deployment guidance.</p>
+        </div>
+        <div class="card">
+          <h3>Data Analysis & ML</h3>
+          <p class="project-meta">Data cleaning, visualization, and machine learning workflows with Python.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Selected Projects</h2>
+      <div class="grid">
+
+        <article class="card">
+          <h3>Brain Tumor Detection Using CNN (Python)</h3>
+          <div class="project-meta">Deep learning model for MRI classification. Preprocessing, training, evaluation.</div>
+          <div class="project-actions">
+            <a class="btn" href="#" onclick="openLink('https://github.com/jeslin12')">View Code</a>
+            <a href="#" style="padding:10px;border-radius:10px;background:#eef3ff;color:#0633a6;text-decoration:none">Case Study</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Weather App (HTML/CSS/JS)</h3>
+          <div class="project-meta">Real-time weather using OpenWeatherMap API. Search by city, responsive UI.</div>
+          <div class="project-actions">
+            <a class="btn" href="#" onclick="openLink('https://github.com/jeslin12')">View Code</a>
+            <a href="#" style="padding:10px;border-radius:10px;background:#eef3ff;color:#0633a6;text-decoration:none">Live Demo</a>
+          </div>
+        </article>
+
+        <article class="card">
+          <h3>Fraudulent Transaction Detection (ML)</h3>
+          <div class="project-meta">Feature engineering, model training with Random Forest/SVM, handling imbalanced data.</div>
+          <div class="project-actions"><a class="btn" href="#" onclick="openLink('https://github.com/jeslin12')">View Code</a></div>
+        </article>
+
+        <article class="card">
+          <h3>Movie Recommendation System</h3>
+          <div class="project-meta">Collaborative filtering, Python, Flask for UI integration.</div>
+          <div class="project-actions"><a class="btn" href="#" onclick="openLink('https://github.com/jeslin12')">View Code</a></div>
+        </article>
+
+        <article class="card">
+          <h3>Spam Email Classifier</h3>
+          <div class="project-meta">NLP preprocessing, TF-IDF, Naive Bayes / SVM; ~97% accuracy.</div>
+          <div class="project-actions"><a class="btn" href="#" onclick="openLink('https://github.com/jeslin12')">View Code</a></div>
+        </article>
+
+        <article class="card">
+          <h3>Student Performance Analysis (Python)</h3>
+          <div class="project-meta">EDA, visualization (Matplotlib, Seaborn), insights and reporting.</div>
+          <div class="project-actions"><a class="btn" href="#" onclick="openLink('https://github.com/jeslin12')">View Report</a></div>
+        </article>
+
+        <article class="card">
+          <h3>A New Adventure in Ice Cream (HTML/CSS)</h3>
+          <div class="project-meta">Static responsive website showcasing UI/UX layout and styling.</div>
+          <div class="project-actions"><a class="btn" href="#" onclick="openLink('https://github.com/jeslin12')">View Code</a></div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="grid">
+        <div class="card">
+          <h3>Get in touch</h3>
+          <p class="project-meta">Phone: <strong>8116265454</strong><br>Email: <a href="mailto:jebastinjeslin2@gmail.com">jebastinjeslin2@gmail.com</a><br>LinkedIn: <a href="https://www.linkedin.com/in/justin-jeslin-635759251" target="_blank">justin-jeslin</a><br>GitHub: <a href="https://github.com/jeslin12" target="_blank">jeslin12</a></p>
+        </div>
+        <div class="card">
+          <h3>Send a message</h3>
+          <form id="contactForm" onsubmit="handleContact(event)">
+            <input type="text" id="name" placeholder="Your name" required />
+            <input type="email" id="email" placeholder="Your email" required />
+            <textarea id="message" placeholder="Your message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+            <div id="formMsg" style="margin-top:8px;color:var(--muted)"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      © Justin Jeslin — Built with ❤️ • <a href="https://github.com/jeslin12" target="_blank">GitHub</a>
+    </footer>
+  </div>
+
+  <script>
+    function openLink(url){ window.open(url,'_blank') }
+    function handleContact(e){ e.preventDefault();
+      const name=document.getElementById('name').value;
+      const email=document.getElementById('email').value;
+      const message=document.getElementById('message').value;
+      document.getElementById('formMsg').innerText = 'Thanks '+(name||'')+'. This demo contact form does not send emails — replace with your backend or use formsubmit.co.';
+      // Clear
+      setTimeout(()=>{document.getElementById('contactForm').reset();},1200);
+    }
+  </script>
+</body>
+</html>
